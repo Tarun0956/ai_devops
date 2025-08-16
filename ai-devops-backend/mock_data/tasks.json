@@ -1,0 +1,20 @@
+[
+    {
+        "id": "JIRA-101",
+        "title": "Fix login bug",
+        "status": "In Progress",
+        "lastUpdated": "2025-08-07"
+    },
+    {
+        "id": "JIRA-102",
+        "title": "Add dashboard page",
+        "status": "To Do",
+        "lastUpdated": "2025-08-02"
+    },
+    {
+        "id": "JIRA-103",
+        "title": "Optimize DB queries",
+        "status": "Blocked",
+        "lastUpdated": "2025-08-01"
+    }
+]

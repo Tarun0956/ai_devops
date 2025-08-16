@@ -1,0 +1,20 @@
+[
+    {
+        "buildId": 101,
+        "status": "FAILED",
+        "duration": 300,
+        "error": "Out of memory"
+    },
+    {
+        "buildId": 102,
+        "status": "FAILED",
+        "duration": 250,
+        "error": "Dependency error"
+    },
+    {
+        "buildId": 103,
+        "status": "SUCCESS",
+        "duration": 200,
+        "error": null
+    }
+]
