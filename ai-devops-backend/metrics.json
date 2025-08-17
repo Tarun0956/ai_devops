@@ -1,0 +1,252 @@
+[
+    {
+        "time": "T1",
+        "cpu": 76,
+        "memory": 49
+    },
+    {
+        "time": "T2",
+        "cpu": 63,
+        "memory": 88
+    },
+    {
+        "time": "T3",
+        "cpu": 95,
+        "memory": 84
+    },
+    {
+        "time": "T4",
+        "cpu": 65,
+        "memory": 65
+    },
+    {
+        "time": "T5",
+        "cpu": 37,
+        "memory": 43
+    },
+    {
+        "time": "T6",
+        "cpu": 67,
+        "memory": 65
+    },
+    {
+        "time": "T7",
+        "cpu": 31,
+        "memory": 41
+    },
+    {
+        "time": "T8",
+        "cpu": 83,
+        "memory": 86
+    },
+    {
+        "time": "T9",
+        "cpu": 66,
+        "memory": 71
+    },
+    {
+        "time": "T10",
+        "cpu": 42,
+        "memory": 42
+    },
+    {
+        "time": "T11",
+        "cpu": 82,
+        "memory": 73
+    },
+    {
+        "time": "T12",
+        "cpu": 81,
+        "memory": 47
+    },
+    {
+        "time": "T13",
+        "cpu": 86,
+        "memory": 78
+    },
+    {
+        "time": "T14",
+        "cpu": 84,
+        "memory": 61
+    },
+    {
+        "time": "T15",
+        "cpu": 88,
+        "memory": 43
+    },
+    {
+        "time": "T16",
+        "cpu": 85,
+        "memory": 72
+    },
+    {
+        "time": "T17",
+        "cpu": 53,
+        "memory": 79
+    },
+    {
+        "time": "T18",
+        "cpu": 32,
+        "memory": 86
+    },
+    {
+        "time": "T19",
+        "cpu": 82,
+        "memory": 84
+    },
+    {
+        "time": "T20",
+        "cpu": 64,
+        "memory": 51
+    },
+    {
+        "time": "T21",
+        "cpu": 56,
+        "memory": 43
+    },
+    {
+        "time": "T22",
+        "cpu": 57,
+        "memory": 65
+    },
+    {
+        "time": "T23",
+        "cpu": 90,
+        "memory": 54
+    },
+    {
+        "time": "T24",
+        "cpu": 60,
+        "memory": 53
+    },
+    {
+        "time": "T25",
+        "cpu": 49,
+        "memory": 68
+    },
+    {
+        "time": "T26",
+        "cpu": 39,
+        "memory": 68
+    },
+    {
+        "time": "T27",
+        "cpu": 71,
+        "memory": 51
+    },
+    {
+        "time": "T28",
+        "cpu": 86,
+        "memory": 70
+    },
+    {
+        "time": "T29",
+        "cpu": 39,
+        "memory": 73
+    },
+    {
+        "time": "T30",
+        "cpu": 70,
+        "memory": 87
+    },
+    {
+        "time": "T31",
+        "cpu": 45,
+        "memory": 48
+    },
+    {
+        "time": "T32",
+        "cpu": 70,
+        "memory": 46
+    },
+    {
+        "time": "T33",
+        "cpu": 64,
+        "memory": 51
+    },
+    {
+        "time": "T34",
+        "cpu": 37,
+        "memory": 79
+    },
+    {
+        "time": "T35",
+        "cpu": 77,
+        "memory": 64
+    },
+    {
+        "time": "T36",
+        "cpu": 39,
+        "memory": 74
+    },
+    {
+        "time": "T37",
+        "cpu": 85,
+        "memory": 64
+    },
+    {
+        "time": "T38",
+        "cpu": 64,
+        "memory": 67
+    },
+    {
+        "time": "T39",
+        "cpu": 46,
+        "memory": 63
+    },
+    {
+        "time": "T40",
+        "cpu": 53,
+        "memory": 83
+    },
+    {
+        "time": "T41",
+        "cpu": 38,
+        "memory": 51
+    },
+    {
+        "time": "T42",
+        "cpu": 49,
+        "memory": 62
+    },
+    {
+        "time": "T43",
+        "cpu": 46,
+        "memory": 56
+    },
+    {
+        "time": "T44",
+        "cpu": 54,
+        "memory": 69
+    },
+    {
+        "time": "T45",
+        "cpu": 89,
+        "memory": 90
+    },
+    {
+        "time": "T46",
+        "cpu": 67,
+        "memory": 62
+    },
+    {
+        "time": "T47",
+        "cpu": 61,
+        "memory": 74
+    },
+    {
+        "time": "T48",
+        "cpu": 32,
+        "memory": 56
+    },
+    {
+        "time": "T49",
+        "cpu": 51,
+        "memory": 83
+    },
+    {
+        "time": "T50",
+        "cpu": 76,
+        "memory": 86
+    }
+]

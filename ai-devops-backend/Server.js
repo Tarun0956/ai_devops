@@ -1,52 +1,67 @@
 const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
+const { exec } = require('child_process');
+const axios = require("axios");
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Load mock data
-const logs = JSON.parse(fs.readFileSync('./mock_data/logs.json', 'utf8'));
-const tasks = JSON.parse(fs.readFileSync('./mock_data/tasks.json', 'utf8'));
-const metrics = JSON.parse(fs.readFileSync('./mock_data/metrics.json', 'utf8'));
+// Run Python script to generate fresh mock data before loading
+exec('python ./mock_data/generate_data.py', (err, stdout, stderr) => {
+    if (err) {
+        console.error(`❌ Error generating mock data: ${err.message}`);
+        return;
+    }
+    if (stderr) {
+        console.error(`⚠️ stderr: ${stderr}`);
+    }
+    console.log(`✅ Mock data generated: ${stdout}`);
+});
+
+// Helper function to reload JSON after generation
+function loadData() {
+    return {
+        logs: JSON.parse(fs.readFileSync('./mock_data/logs.json', 'utf8')),
+        tasks: JSON.parse(fs.readFileSync('./mock_data/tasks.json', 'utf8')),
+        metrics: JSON.parse(fs.readFileSync('./mock_data/metrics.json', 'utf8')),
+    };
+}
 
 // API endpoints
 app.get('/logs', (req, res) => {
+    const { logs } = loadData();
     res.json(logs);
 });
 
 app.get('/tasks', (req, res) => {
+    const { tasks } = loadData();
     res.json(tasks);
 });
 
 app.get('/metrics', (req, res) => {
+    const { metrics } = loadData();
     res.json(metrics);
 });
 
-app.get('/insights', (req, res) => {
-    const insights = [];
+// Insights endpoint -> calls Flask model
+app.get('/insights', async (req, res) => {
+    const { logs, tasks, metrics } = loadData();
 
-    const failedCount = logs.filter(l => l.status === "FAILED").length;
-    if (failedCount >= 3) {
-        insights.push("Multiple build failures detected — Check memory usage or dependencies.");
+    try {
+        const response = await axios.post("http://127.0.0.1:5001/insights", {
+            logs,
+            tasks,
+            metrics
+        });
+        res.json(response.data);
+    } catch (error) {
+        console.error("❌ Error fetching insights:", error.message);
+        res.status(500).json({ error: "Failed to fetch insights from ML model" });
     }
-
-    const now = new Date();
-    tasks.forEach(task => {
-        const diffDays = Math.floor((now - new Date(task.lastUpdated)) / (1000 * 60 * 60 * 24));
-        if (diffDays > 3) {
-            insights.push(`Ticket ${task.id} is idle for ${diffDays} days — consider reassignment.`);
-        }
-    });
-
-    if (metrics.cpu.some(usage => usage > 85)) {
-        insights.push("High CPU usage detected — consider scaling up.");
-    }
-
-    res.json({ insights });
 });
 
 // Start server
 const PORT = 5000;
-app.listen(PORT, () => console.log(`Backend running on port ${PORT}`));
+app.listen(PORT, () => console.log(`🚀 Backend running on port ${PORT}`));

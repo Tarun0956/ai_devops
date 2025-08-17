@@ -1,20 +1,92 @@
 [
     {
-        "id": "JIRA-101",
-        "title": "Fix login bug",
-        "status": "In Progress",
-        "lastUpdated": "2025-08-07"
-    },
-    {
-        "id": "JIRA-102",
-        "title": "Add dashboard page",
-        "status": "To Do",
-        "lastUpdated": "2025-08-02"
-    },
-    {
-        "id": "JIRA-103",
-        "title": "Optimize DB queries",
+        "task_id": "TASK-1",
+        "jira_ticket": "JIRA-1001",
         "status": "Blocked",
-        "lastUpdated": "2025-08-01"
+        "assigned_to": "Charlie",
+        "priority": "Critical",
+        "created_at": "2025-08-15T20:24:52.626134",
+        "completed_at": null
+    },
+    {
+        "task_id": "TASK-2",
+        "jira_ticket": "JIRA-1002",
+        "status": "Blocked",
+        "assigned_to": "Charlie",
+        "priority": "Medium",
+        "created_at": "2025-08-14T20:24:52.626134",
+        "completed_at": "2025-08-15T20:24:52.626134"
+    },
+    {
+        "task_id": "TASK-3",
+        "jira_ticket": "JIRA-1003",
+        "status": "To Do",
+        "assigned_to": "Charlie",
+        "priority": "High",
+        "created_at": "2025-08-15T20:24:52.626134",
+        "completed_at": "2025-08-19T20:24:52.626134"
+    },
+    {
+        "task_id": "TASK-4",
+        "jira_ticket": "JIRA-1004",
+        "status": "Blocked",
+        "assigned_to": "David",
+        "priority": "High",
+        "created_at": "2025-08-16T20:24:52.626134",
+        "completed_at": "2025-08-18T20:24:52.626134"
+    },
+    {
+        "task_id": "TASK-5",
+        "jira_ticket": "JIRA-1005",
+        "status": "Blocked",
+        "assigned_to": "Bob",
+        "priority": "Critical",
+        "created_at": "2025-08-15T20:24:52.626134",
+        "completed_at": null
+    },
+    {
+        "task_id": "TASK-6",
+        "jira_ticket": "JIRA-1006",
+        "status": "Blocked",
+        "assigned_to": "Charlie",
+        "priority": "Medium",
+        "created_at": "2025-08-14T20:24:52.626134",
+        "completed_at": null
+    },
+    {
+        "task_id": "TASK-7",
+        "jira_ticket": "JIRA-1007",
+        "status": "In Progress",
+        "assigned_to": "Eve",
+        "priority": "Low",
+        "created_at": "2025-08-14T20:24:52.626134",
+        "completed_at": null
+    },
+    {
+        "task_id": "TASK-8",
+        "jira_ticket": "JIRA-1008",
+        "status": "In Progress",
+        "assigned_to": "Eve",
+        "priority": "High",
+        "created_at": "2025-08-12T20:24:52.626134",
+        "completed_at": "2025-08-12T20:24:52.626134"
+    },
+    {
+        "task_id": "TASK-9",
+        "jira_ticket": "JIRA-1009",
+        "status": "Blocked",
+        "assigned_to": "Bob",
+        "priority": "Medium",
+        "created_at": "2025-08-11T20:24:52.626134",
+        "completed_at": "2025-08-13T20:24:52.626134"
+    },
+    {
+        "task_id": "TASK-10",
+        "jira_ticket": "JIRA-1010",
+        "status": "In Progress",
+        "assigned_to": "David",
+        "priority": "High",
+        "created_at": "2025-08-08T20:24:52.626134",
+        "completed_at": "2025-08-13T20:24:52.626134"
     }
 ]

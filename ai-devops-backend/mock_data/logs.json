@@ -1,20 +1,122 @@
 [
     {
-        "buildId": 101,
-        "status": "FAILED",
-        "duration": 300,
-        "error": "Out of memory"
+        "timestamp": "2025-08-17T20:14:52.625134",
+        "log_level": "INFO",
+        "component": "API",
+        "message": "Dependency missing"
     },
     {
-        "buildId": 102,
-        "status": "FAILED",
-        "duration": 250,
-        "error": "Dependency error"
+        "timestamp": "2025-08-17T20:04:52.625134",
+        "log_level": "WARN",
+        "component": "Auth",
+        "message": "Memory usage high"
     },
     {
-        "buildId": 103,
-        "status": "SUCCESS",
-        "duration": 200,
-        "error": null
+        "timestamp": "2025-08-17T19:54:52.626134",
+        "log_level": "ERROR",
+        "component": "API",
+        "message": "Memory usage high"
+    },
+    {
+        "timestamp": "2025-08-17T19:44:52.626134",
+        "log_level": "WARN",
+        "component": "Scheduler",
+        "message": "Connection failed"
+    },
+    {
+        "timestamp": "2025-08-17T19:34:52.626134",
+        "log_level": "DEBUG",
+        "component": "Worker",
+        "message": "Operation completed successfully"
+    },
+    {
+        "timestamp": "2025-08-17T19:24:52.626134",
+        "log_level": "WARN",
+        "component": "API",
+        "message": "Timeout occurred"
+    },
+    {
+        "timestamp": "2025-08-17T19:14:52.626134",
+        "log_level": "ERROR",
+        "component": "Worker",
+        "message": "Timeout occurred"
+    },
+    {
+        "timestamp": "2025-08-17T19:04:52.626134",
+        "log_level": "INFO",
+        "component": "Auth",
+        "message": "Timeout occurred"
+    },
+    {
+        "timestamp": "2025-08-17T18:54:52.626134",
+        "log_level": "DEBUG",
+        "component": "Worker",
+        "message": "Timeout occurred"
+    },
+    {
+        "timestamp": "2025-08-17T18:44:52.626134",
+        "log_level": "WARN",
+        "component": "Scheduler",
+        "message": "Operation completed successfully"
+    },
+    {
+        "timestamp": "2025-08-17T18:34:52.626134",
+        "log_level": "INFO",
+        "component": "Scheduler",
+        "message": "Dependency missing"
+    },
+    {
+        "timestamp": "2025-08-17T18:24:52.626134",
+        "log_level": "INFO",
+        "component": "Auth",
+        "message": "Task scheduled"
+    },
+    {
+        "timestamp": "2025-08-17T18:14:52.626134",
+        "log_level": "INFO",
+        "component": "Worker",
+        "message": "Timeout occurred"
+    },
+    {
+        "timestamp": "2025-08-17T18:04:52.626134",
+        "log_level": "ERROR",
+        "component": "API",
+        "message": "Memory usage high"
+    },
+    {
+        "timestamp": "2025-08-17T17:54:52.626134",
+        "log_level": "DEBUG",
+        "component": "API",
+        "message": "Dependency missing"
+    },
+    {
+        "timestamp": "2025-08-17T17:44:52.626134",
+        "log_level": "DEBUG",
+        "component": "Auth",
+        "message": "Dependency missing"
+    },
+    {
+        "timestamp": "2025-08-17T17:34:52.626134",
+        "log_level": "DEBUG",
+        "component": "Worker",
+        "message": "Connection failed"
+    },
+    {
+        "timestamp": "2025-08-17T17:24:52.626134",
+        "log_level": "INFO",
+        "component": "DB",
+        "message": "Dependency missing"
+    },
+    {
+        "timestamp": "2025-08-17T17:14:52.626134",
+        "log_level": "INFO",
+        "component": "Worker",
+        "message": "Task scheduled"
+    },
+    {
+        "timestamp": "2025-08-17T17:04:52.626134",
+        "log_level": "ERROR",
+        "component": "Auth",
+        "message": "Operation completed successfully"
     }
 ]
